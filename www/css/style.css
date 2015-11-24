@@ -1,1 +1,32 @@
 /* Empty. Add your own CSS if you like */
+.menuContent {
+  position: absolute;
+  height: 0px;
+  width: 100%;
+  background: #333;
+  color: white;
+  z-index: 1000;
+  transition: all .4s; 
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+}
+
+ion-pane {
+  position: absolute;
+  transition: all .4s !important; 
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+}
+
+.menuContent .item {
+  background: none;
+  border-color: #222;
+  color: white; 
+}
+
+#menuBar{
+   transition: all .4s; 
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+}
+
