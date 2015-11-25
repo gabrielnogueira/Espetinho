@@ -7,24 +7,41 @@
 
 angular.module('starter', ['ionic']).controller('MyCtrl', function($scope, $document) {
   
-  $scope.items = [
-    { id: 0 },
-    { id: 1 },
-    { id: 2 },
-    { id: 3 }
-  ];
-  
   $scope.toggleTopMenu = function () {
+   
+
+
     var menu = document.getElementById('menuTop');
     var menuBar = document.getElementById('menuBar');
-    menu.style.height = menuBar.style.top = (menu.offsetHeight==0)?'100%':'0px';
+
+/*    menu.style.top = menuBar.style.top = (menu.style.top==0)?'100%':'0px';
+*/
+    var topMenu = menu.style.top;
+    var topMenuBar = menuBar.style.top;
+
+    menu.style.top =  (topMenu !='0px')?'0px':'-100%';
+    menuBar.style.top = (topMenuBar !='0px')? '100%':'0px';
+
+    console.log(menu.offsetHeight);
+
+    var totalHeight = menu.offsetHeight;
+
+    var children = document.getElementById('scrollPanel').children[0].children;
+      var heightChild = totalHeight/children.length;
+      for (var i = 0; i < children.length; i++) {
+        var tableChild = children[i];
+        // Do stuff
+        console.log(heightChild + 'px');
+        tableChild.style.height = heightChild + 'px';
+      }
+
   };
 
   $scope.clickItemMenu = function () {
     var menu = document.getElementById('menuTop');
     var menuBar = document.getElementById('menuBar');
-    menu.style.height = menuBar.style.top = '0px';
-
+     menu.style.top = '-100%';
+     menuBar.style.top = '0px';
   };
   
 })

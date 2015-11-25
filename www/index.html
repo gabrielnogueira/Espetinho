@@ -22,91 +22,45 @@
 </head>
   <body ng-app="starter" ng-controller="MyCtrl">
         
-        <!-- <div class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3"> teste</div> -->
-    
-    <!-- <ion-top-menu class="slide-menu slide-menu-horizontal slide-menu-up" id="slide-menu-header">
-      <ion-scroll style="width:100%;height:100%">
-        <div class="list">
-          <div class="item">
-            A few
-          </div>
-          <div class="item">
-            of my
-          </div>
-          <div class="item">
-            favorite
-          </div>
-          <div class="item">
-            things
-          </div>
-          <div class="item">
-            A few
-          </div>
-          <div class="item">
-            of my
-          </div>
-          <div class="item">
-            favorite
-          </div>
-          <div class="item">
-            things
-          </div>
-        </div>
-        <div >
-          <h1 class="title">Top menu</h1>
-        </div>
-      </ion-scroll>
-        
-    </ion-top-menu> -->
+   <ion-top-menu class="menuContent" id="menuTop" ng-click="clickItemMenu()">
 
-  <ion-top-menu class="menuContent" id="menuTop">
-      <ion-scroll style="width:100%;height:100%">
-        <div class="list" ng-click="clickItemMenu()">
-          <div class="item">
-            A few
-          </div>
-          <div class="item">
-            of my
-          </div>
-          <div class="item">
-            favorite
-          </div>
-          <div class="item">
-            things
-          </div>
-          <div class="item">
-            A few
-          </div>
-          <div class="item">
-            of my
-          </div>
-          <div class="item">
-            favorite
-          </div>
-          <div class="item">
-            things
-          </div>
-        </div>
+      <ion-scroll style="width:100%; height:100%" id="scrollPanel">
+
+        <nav class="menuItem" id="item1">
+          Show/Hide Top Slide Menu
+        </nav>
+        <nav class="menuItem">
+          Show/Hide Top Slide Menu
+        </nav>
+        <nav class="menuItem">
+          Show/Hide Top Slide Menu
+        </nav>
+        <nav class="menuItem">
+          Show/Hide Top Slide Menu
+        </nav>
+        <nav class="menuItem">
+          Show/Hide Top Slide Menu
+        </nav>
+        <nav class="menuItem">
+          Show/Hide Top Slide Menu
+        </nav>
+
       </ion-scroll>
     </ion-top-menu>
 
-
     <ion-header-bar class="menuHeader" id="menuBar" ng-click="toggleTopMenu()">
-        <div class="buttons">
-          <h1 class="title">Top menu</h1>
-        </div>
+      <div class="topMenu">
+        <h1 class="tituloMenu">MENU</h1>
+        <i class="ion-navicon-round iconMenu"></i> 
+      </div>
+      
     </ion-header-bar>
     
-    <ion-pane>
+    <ion-pane class="panel">
       <ion-content>
-        <ion-list>
-          <ion-item ng-repeat="item in items">
-            Item {{ item.id }}
-            <ion-option-button class="button-assertive">Edit</ion-option-button>
-            <ion-option-button class="button-calm">Share</ion-option-button>
-          </ion-item>
-        </ion-list>
-      </ion-content>
+        
+     </ion-content>
     </ion-pane>
+
   </body>
 </html>

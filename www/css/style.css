@@ -1,32 +1,135 @@
 /* Empty. Add your own CSS if you like */
 .menuContent {
   position: absolute;
-  height: 0px;
+  height: 100%;
   width: 100%;
   background: #333;
   color: white;
   z-index: 1000;
+  top:-100%;
   transition: all .4s; 
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
 }
 
-ion-pane {
-  position: absolute;
+.menuContent .contentMenu {
+  background: none;
+  border-color: #222;
+  color: white; 
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+.menuHeader{
+  top:0px;
+   transition: all .4s; 
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+}
+
+.topMenu{
+  background-color: #333;
+  position:absolute;
+  
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 0;
+
+  width: 100%;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  text-align: center;
+  vertical-align: middle;
+
+
+  /*overflow: hidden;*/
+}
+
+.tituloMenu{
+  color: white;
+  display: inline;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 0;
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  line-height: 44px;
+}
+
+.iconMenu{
+  color: white;
+  display: inline;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 0;
+
+  font-size: 20px;
+  
+  font-weight: 500;
+
+  line-height: 44px;
+
+}
+
+.contentMenu{
+  background-color: blue;
+}
+
+.panel {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
   transition: all .4s !important; 
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
 }
 
-.menuContent .item {
-  background: none;
-  border-color: #222;
-  color: white; 
+
+.menuItem{
+  text-align: center;
+  border: none;
+  
+  color: #fff;
+  padding: 1.5em;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 17px;
+
+  height: 100%;
+  background: #47a3da;
 }
 
-#menuBar{
-   transition: all .4s; 
-   -webkit-transition: all 0.4s ease;
-   -moz-transition: all 0.4s ease;
+.menuItem:hover {
+  background: #258ecd;
 }
+
+.menuItem.active {
+  background: #0d77b6;
+}
+
+.menuItem.disabled {
+  background: #aaa;
+  pointer-events: none;
+}
+
+
+
 
