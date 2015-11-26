@@ -18,58 +18,52 @@
 
   <!-- your app's js -->
   <script src="js/app.js"></script>
+
+
 </head>
   <body ng-app="starter" ng-controller="MyCtrl">
 
   
-   <ion-top-menu class="menuContent transitionsMenu" id="menuTop" ng-click="clickItemMenu()">
+   <div class="menuContent transitionsMenu" id="menuTop" ng-click="clickItemMenu()">
 
-
-      <ion-scroll style="width:100%; height:100%" id="scrollPanel">
+      <!-- <ion-scroll style="width:100%; height:100%" id="scrollPanel">-->
           
-         <nav class="menuItem menuItem-a transitionsMenuItem" id="teste1" >
-          
-            <a>Show/Hide Top Slide Menu</a>
-          
-        </nav>
-       < <nav class="menuItem menuItem-b transitionsMenuItem" id="teste2">
-          <a>Show/Hide Top Slide Menu</a>
+         <nav class="menuItem menuItem-a" id="teste1" >
+            <a>Teste1</a>
+         </nav>
+        <!-- <nav class="menuItem menuItem-b" id="teste2">
+          <a>Teste2</a>
         </nav>  
-         <nav class="menuItem menuItem-c transitionsMenuItem" id="teste3">
-          <a>Show/Hide Top Slide Menu</a>
+         <nav class="menuItem menuItem-c" id="teste3">
+          <a>Teste3</a>
         </nav>
-       <nav class="menuItem menuItem-d transitionsMenuItem" id="teste4">
-          <a>Show/Hide Top Slide Menu</a>
+       <nav class="menuItem menuItem-d" id="teste4">
+          <a>Teste4</a>
         </nav>
-        <nav class="menuItem menuItem-e transitionsMenuItem" id="teste5">
-          <a>Show/Hide Top Slide Menu</a>
-        </nav>
-      </ion-scroll>
-    </ion-top-menu>
+        <nav class="menuItem menuItem-e" id="teste5">
+          <a>Teste5</a>
+        </nav> -->
 
-    <ion-header-bar class="menuHeader transitionsMenu" id="menuBar" ng-click="toggleTopMenu()">
-      <div class="topMenu">
+      <!--</ion-scroll> -->
+    </div>
+
+    <ion-header-bar class="transitionsMenu" id="menuBar" ng-click="toggleTopMenu()">
+      <!-- <div class="topMenu">
         <h1 class="tituloMenu">MENU</h1>
         <i class="ion-navicon-round iconMenu"></i> 
-      </div>
+      </div> -->
       
     </ion-header-bar>
 
     <ion-pane class="panel">
       <ion-content>
 
-      <form action=""> 
+       <div class="menuContent2 relDiv">  This div element has position: relative;
+            <div class="absDiv" id="divTest1" >This div element has position: absolute. It is placed 70 pixels above the bottom edge of the  containing positioned element (div with class="relative").</div>
+        </div>
 
-        <fieldset> 
+        <button id="showTop" ng-click="testDiv()"> testar </button>
 
-          <input type="button" value="test2" onclick="test2()" /> 
-
-          <input type="text" id="result2" /> 
-
-        </fieldset> 
-
-      </form> 
-        
      </ion-content>
     </ion-pane>
 
