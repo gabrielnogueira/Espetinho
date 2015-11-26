@@ -10,20 +10,7 @@
 
 }
 
-.menuContent .contentMenu {
-  background: none;
-  border-color: #222;
-  color: white; 
-  height: 100%;
-  width: 100%;
-  background-color: red;
-}
-
-.menuHeader{
-  top:0px;
-}
-
-.topMenu{
+.menuHeaderContent{
   background-color: #333;
   position:absolute;
   
@@ -46,7 +33,7 @@
   /*overflow: hidden;*/
 }
 
-.tituloMenu{
+.menuHeaderTitle{
   color: white;
   display: inline;
 
@@ -83,45 +70,23 @@
 
 }
 
-.contentMenu{
-  background-color: blue;
-}
-
-.panel {
-  height: 100%;
-  width: 100%;
-  background-color: yellow;
-  }
-
-
 .menuItem{
   position: absolute;
-  display: table;
-
   text-align: center;
-  vertical-align: middle;
+  vertical-align: bottom;
+
   border: none;
   
-  color: #fff;
-
   width: 100%;
   cursor: pointer;
   font-size: 17px;
 
-  background: #47a3da;
-
-  top: -1000px;
+  top: -2000px;
 
 }
-
-.menuItem *{
-  display: table-cell;
-  vertical-align: bottom;
-}
-
 
 .menuItem-a{
-	background: red;
+	background: purple;
 }
 .menuItem-b{
 	background: blue;
@@ -133,41 +98,110 @@
 	background: green;
 }
 .menuItem-e{
-	background: #333;
+	background: gray;
+}
+.menuItem-f{
+  background: #333;
 }
 
-.menuItem:hover {
+.absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.menuItemContent{
+    position: absolute;
+    bottom: 0px;
+    width: 100%; 
+}
+
+.menuItemContentArea{
+     position: relative;
+    display: table;
+    vertical-align: middle;
+    width: 100%;
+    /*border-style: solid;
+    border-width: 10px;*/
+}
+
+.menuItemContentArea-a{
+  background: purple;
+}
+.menuItemContentArea-b{
+  background: blue;
+}
+.menuItemContentArea-c{
+  background: yellow;
+}
+.menuItemContentArea-d{
+  background: green;
+}
+.menuItemContentArea-e{
+  background: gray;
+}
+.menuItemContentArea-f{
+  background: #333;
+}
+
+
+    
+
+.menuItemContentArea-item{
+    vertical-align: middle;
+    text-align:center;
+    width:100%;
+    display:table;
+    color: white;
+    background: black;
+    
+}
+
+.menuItemContent{
+  vertical-align: middle;
+}
+
+.menuItemContent:hover {
   background: black;
 }
 
-.menuItem.active {
+.menuItemContent.active {
   background: #0d77b6;
 }
 
-.menuItem.disabled {
+.menuItemContent.disabled {
   background: #aaa;
   pointer-events: none;
 }
 
-.transitionsMenu{
-    transition: all .4s; 
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;*
-
-  /*-webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;*/
-
-}
+.panel {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  }
 
 .transitionsMenuItem{
-  /*transition: width 0.5s;
-  transition-timing-function: linear;*/
-   transition: all .4s; 
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;*
+     transition: all 0.3s; 
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;*
 }
+
+.transitionsMenu{
+   /*transition: all 0.5s; 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;**/
+
+ transition: all 0.5s; 
+  -webkit-transition: all 0.5s cubic-bezier(1,.18,.4,.81);
+  -moz-transition: all 0.5s cubic-bezier(1,.18,.4,.81);*
+
+}
+
+/*.transitionsMenuOut{
+   transition: all .8s; 
+  -webkit-transition: all .8s cubic-bezier(1,.18,.4,.81);
+  -moz-transition: all .8s cubic-bezier(1,.18,.4,.81);*
+}*/
 
 
 

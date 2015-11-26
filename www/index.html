@@ -8,6 +8,7 @@
 
   <link href="lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/csshake.css" rel="stylesheet">
 
 
   <!-- ionic/angularjs js -->
@@ -21,57 +22,130 @@
 </head>
   <body ng-app="starter" ng-controller="MyCtrl">
 
-  
+  <!--Site exemplo alinhamento http://codepen.io/strack/pen/dtsuf-->
    <ion-top-menu class="menuContent transitionsMenu" id="menuTop" ng-click="clickItemMenu()">
+      
+      <ion-scroll style="width:100%; height:100%;" id="scrollPanel">
+        
+        <div class="menuItem menuItem-a transitionsMenuItem" id="teste1">
 
+            <div class="menuItemContent">
 
-      <ion-scroll style="width:100%; height:100%" id="scrollPanel">
-          
-         <nav class="menuItem menuItem-a transitionsMenuItem" id="teste1" >
-          
-            <a>Show/Hide Top Slide Menu</a>
-          
-        </nav>
-       < <nav class="menuItem menuItem-b transitionsMenuItem" id="teste2">
-          <a>Show/Hide Top Slide Menu</a>
-        </nav>  
-         <nav class="menuItem menuItem-c transitionsMenuItem" id="teste3">
-          <a>Show/Hide Top Slide Menu</a>
-        </nav>
-       <nav class="menuItem menuItem-d transitionsMenuItem" id="teste4">
-          <a>Show/Hide Top Slide Menu</a>
-        </nav>
-        <nav class="menuItem menuItem-e transitionsMenuItem" id="teste5">
-          <a>Show/Hide Top Slide Menu</a>
-        </nav>
+                <div class="menuItemContentArea menuItemContentArea-a absolute-Center">
+                  
+                    <nav class="menuItemContentArea-item absolute-Center">
+                        <a>TESTE1</a>
+                    </nav>
+
+                </div>
+
+            </div> 
+
+        </div>  
+
+          <div class="menuItem menuItem-b  transitionsMenuItem" id="teste2">
+
+            <div class="menuItemContent">
+
+                <div class="menuItemContentArea menuItemContentArea-b absolute-Center">
+                  
+                    <nav class="menuItemContentArea-item absolute-Center">
+                        <a>TESTE2</a>
+                    </nav>
+
+                </div>
+
+            </div> 
+
+        </div>  
+
+        <div class="menuItem menuItem-c transitionsMenuItem" id="teste3">
+
+            <div class="menuItemContent">
+
+                <div class="menuItemContentArea menuItemContentArea-c absolute-Center">
+                  
+                    <nav class="menuItemContentArea-item absolute-Center">
+                        <a>TESTE3</a>
+                    </nav>
+
+                </div>
+
+            </div> 
+
+        </div>  
+
+        <div class="menuItem menuItem-d  transitionsMenuItem" id="teste4">
+
+            <div class="menuItemContent">
+
+                <div class="menuItemContentArea menuItemContentArea-d absolute-Center">
+                  
+                    <nav class="menuItemContentArea-item absolute-Center">
+                        <a>TESTE4</a>
+                    </nav>
+
+                </div>
+
+            </div> 
+
+        </div>  
+
+        <!-- <div class="menuItem menuItem-e transitionsMenuItem" id="teste5">
+
+            <div class="menuItemContent">
+
+                <div class="menuItemContentArea menuItemContentArea-e absolute-Center">
+                  
+                    <nav class="menuItemContentArea-item absolute-Center">
+                        <a>TESTE5</a>
+                    </nav>
+
+                </div>
+
+            </div> 
+
+        </div>   -->
+
+        <div class="menuItem menuItem-f  transitionsMenuItem" id="teste6">
+
+            <div class="menuItemContent">
+
+                <div class="menuItemContentArea menuItemContentArea-f absolute-Center">
+                  
+                    <nav class="menuItemContentArea-item absolute-Center">
+                        <a>TESTE6</a>
+                    </nav>
+
+                </div>
+
+            </div> 
+
+        </div>  
+
       </ion-scroll>
+
     </ion-top-menu>
 
     <ion-header-bar class="menuHeader transitionsMenu" id="menuBar" ng-click="toggleTopMenu()">
-      <div class="topMenu">
-        <h1 class="tituloMenu">MENU</h1>
-        <i class="ion-navicon-round iconMenu"></i> 
+
+      <div class="menuHeaderContent">
+
+        <h1 class="menuHeaderTitle">MENU</h1>
+
+          <i class="ion-navicon-round iconMenu"></i> 
+
       </div>
       
     </ion-header-bar>
 
     <ion-pane class="panel">
+
       <ion-content>
+         
 
-      <form action=""> 
-
-        <fieldset> 
-
-          <input type="button" value="test2" onclick="test2()" /> 
-
-          <input type="text" id="result2" /> 
-
-        </fieldset> 
-
-      </form> 
-        
      </ion-content>
-    </ion-pane>
 
+    </ion-pane>
   </body>
 </html>
