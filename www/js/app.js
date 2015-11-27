@@ -144,8 +144,6 @@ function chamaProximo(totalHeight, valueJ, valueI){
 function toggleMenuItensTest(totalHeight, valueJ, valueI) {
 
 
-    console.log(valueJ, valueI);
-
     var children = document.getElementById('scrollPanel').children[0].children;
 
     var menu = document.getElementById('menuTop');
@@ -270,17 +268,14 @@ function sleepToogleMenuItem(arrayItens, intervalTime, init){
 
    var processor = setInterval(function(){
 
-        console.log(i)
-        console.log(limit)
 
         var tableChild = document.getElementById(arrayItens[i].id);
 
 
         tableChild.classList.add('transitionsMenuItem');
 
-        console.log('add o faz tremer no array :' + i + '/ id : ' + tableChild.id)
         var transitionEnd = transitionEndEventName();
-        tableChild.addEventListener(transitionEnd, function(){fazTremer(tableChild.id); console.log('recebi '+tableChild.id);}, false);
+        tableChild.addEventListener(transitionEnd, function(){fazTremer(tableChild.id);}, false);
             
         var topAtual = arrayItens[i].topValue;
 
